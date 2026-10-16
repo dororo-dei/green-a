@@ -1,0 +1,27 @@
+.news-wrap {
+  display: grid;
+  gap: 2%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.news-wrap li {
+  padding: 5%;
+  background-color: beige;
+}
+
+.pic {
+  position: relative;
+  height: 180px; /*이미지가 아닌 이미지 영역의 높이*/
+  overflow: hidden;
+}
+
+.pic img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  /* width: 100%;
+  display: block; <- 메인에 공통적으로 값을 줘서 지움*/
+}
+.news-wrap li h3 {
+  padding: 2% 0;
+}
