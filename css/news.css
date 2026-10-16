@@ -1,11 +1,13 @@
 .news-wrap {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   gap: 2%;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* grid-template-columns: repeat(4, minmax(0, 1fr)); */
 }
 
 .news-wrap li {
-  padding: 5%;
+  width: calc((100% - 6%) / 4);
+  padding: 1%;
   background-color: beige;
 }
 
@@ -19,8 +21,8 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  /* width: 100%;
-  display: block; <- 메인에 공통적으로 값을 줘서 지움*/
+  width: 100%;
+  /* display: block; <- 메인에 공통적으로 값을 줘서 지움 */
 }
 .news-wrap li h3 {
   padding: 2% 0;

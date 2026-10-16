@@ -10,4 +10,13 @@
   .hamburger {
     display: flex;
   }
+  .news-wrap li {
+    width: calc((100% - 2%) / 2);
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 390px) {
+  .news-wrap li {
+    width: 100%;
+  }
 }
