@@ -35,6 +35,9 @@
     flex-direction: column;
     align-items: flex-start;
   }
+  section .inner {
+    padding: 80px 0;
+  }
 }
 
 /* 모바일 */
@@ -52,5 +55,9 @@
   }
   .lower {
     margin-top: 20px;
+  }
+  .product .swiper-button-next,
+  .product .swiper-button-prev {
+    display: none;
   }
 }

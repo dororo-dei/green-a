@@ -1,8 +1,35 @@
 .product {
+  padding-bottom: 100px;
   background-color: #eee;
 }
 .product > .inner > p {
   font-size: clamp(14px, 1vw, 16px);
   margin-bottom: 2%;
   text-align: center;
+}
+.productSwiper {
+  padding-bottom: 50px;
+  /* background-color: pink; */
+}
+/* 페이지네이션 */
+.product .swiper-pagination {
+  bottom: -55px !important;
+  /* height: 50px !important; */
+  /* background-color: powderblue; */
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff !important;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: #23534a;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 14px !important;
+}
+.swiper-pagination-bullet-active{
+  /* background: url(../images/news1.jpg) no-repeat!important; 이런식으로 이미지 삽입도 가능 */
+  background-color: #888 !important;
+  border-radius: 0 !important;
 }
