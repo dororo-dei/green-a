@@ -1,3 +1,8 @@
 .product {
   background-color: #eee;
 }
+.product > .inner > p {
+  font-size: clamp(14px, 1vw, 16px);
+  margin-bottom: 2%;
+  text-align: center;
+}
